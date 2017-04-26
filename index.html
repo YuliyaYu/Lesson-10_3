@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title> </title>
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <script src="js/swiper.jquery.min.js"></script>
+    <style>
+        .swiper-container {
+            width: 480px;
+            height: 300px;
+        }
+
+    </style>
+    <script>
+        $(document).ready(function() {
+            //initialize swiper when document ready  
+            var mySwiper = new Swiper('.swiper-container', {
+                // Optional parameters
+                // Navigation arrows
+                nextButton: '.swiper-button-next',
+                prevButton: '.swiper-button-prev',
+                loop: true
+            })
+        });
+
+    </script>
+
+</head>
+
+<body>
+    <!-- Slider main container -->
+    <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="img/mini-218405.jpg"></div>
+            <div class="swiper-slide"><img src="img/mini-219218.jpg"></div>
+            <div class="swiper-slide"><img src="img/mini-219864.jpg"></div>
+            <div class="swiper-slide"><img src="img/mini-23316.jpg"></div>
+            <div class="swiper-slide"><img src="img/mini-23541.jpg"></div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+    </div>
+
+
+</body>
+
+</html>
